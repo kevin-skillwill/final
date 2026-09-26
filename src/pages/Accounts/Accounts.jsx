@@ -1,5 +1,7 @@
+import stylus from "./Accounts.module.css"
+
 export const Accounts = () => {
   return (
-    <div>Accounts</div>
+    <div className={stylus.home}>Accounts</div>
   )
 }

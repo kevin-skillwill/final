@@ -1,5 +1,7 @@
+import stylus from "./Dashboard.module.css"
+
 export const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className={stylus.home}>Dashboard</div>
   )
 }
