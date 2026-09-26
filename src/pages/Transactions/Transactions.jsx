@@ -2,6 +2,6 @@ import stylus from "./Transactions.module.css"
 
 export const Transactions = () => {
   return (
-    <div>Transactions</div>
+    <div>Katerina</div>
   )
 }
