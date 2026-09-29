@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { Context } from "../App";
+import { useApp } from "../context/AppContext";
 
 export default function InvoicesSent() {
-  const { invoices } = useContext(Context);
+  const { invoices } = useApp();
 
   return (
     <div className="flex flex-col justify-between rounded-2xl border-2 border-stone-300 bg-white p-6 shadow-md h-full">

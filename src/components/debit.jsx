@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import { Context } from "../App";
+import { useApp } from "../context/AppContext";
 import "../charts.css";
 
 export default function DebitCredit() {
-  const { debitCredit } = useContext(Context);
+  const { debitCredit } = useApp();
 
   return (
     <div className="flex flex-col justify-between rounded-2xl border-2 border-stone-300 bg-white p-6 shadow-md h-full">

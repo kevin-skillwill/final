@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { Context } from "../App";
+import { useApp } from "../context/AppContext";
 
 export default function MyCard() {
-  const { card } = useContext(Context);
+  const { card } = useApp();
 
   return (
     <section className="flex h-full w-full flex-col">
