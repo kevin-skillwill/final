@@ -1,7 +1,13 @@
-import stylus from "./Setting.module.css"
+import styles from "./Setting.module.css";
+import EditProfile from "./EditProfile";
 
+// ერთი Settings კომპონენტი
 export const Settings = () => {
   return (
-    <div>Settings</div>
-  )
-}
+    <div>
+      <EditProfile />
+    </div>
+  );
+};
+
+export default Settings;
