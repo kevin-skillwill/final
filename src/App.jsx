@@ -1,9 +1,13 @@
-import SettingPage3 from './components/SettingPage3/SettingPage3';
+import Investments from "./pages/Investments/Investments";
+import styles from "./App.module.css";
 
-export default function App() {
+
+function App() {
   return (
-    <div className="bg-[#F5F7FA] min-h-screen w-full flex items-center justify-center p-6">
-      <SettingPage3 />
+    <div className={styles.layout}>
+      <Investments />
     </div>
-  );
+  )
 }
+
+export default App
