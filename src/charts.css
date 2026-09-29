@@ -1,0 +1,40 @@
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 220px;
+  padding-top: 1.5rem;
+}
+
+.chart-bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  height: 180px;
+  width: 100%;
+}
+
+.bar-debit {
+  width: 15px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  background-color: #3b82f6; /* Figma blue */
+  transition: height 0.3s ease-in-out;
+}
+
+.bar-credit {
+  width: 15px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  background-color: #fbbf24; /* Figma warm yellow/gold */
+  transition: height 0.3s ease-in-out;
+}

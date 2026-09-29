@@ -1,32 +1,16 @@
-# Poor Bank — საბანკო სისტემის ძირითადი რეპოზიტორია
+# React + Vite
 
-Poor Bank არის მსუბუქი, უსაფრთხო და მოდულარული საბანკო სისტემა (Core Banking), რომელიც შექმნილია ძირითადი საცალო საბანკო ოპერაციების სამართავად: ანგარიშების მართვა, ტრანზაქციების დამუშავება და ფინანსური აღრიცხვა (Ledger).
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
----
+Currently, two official plugins are available:
 
-## ძირითადი ფუნქციონალი
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- **ანგარიშების მართვა:** ფიზიკური და იურიდიული პირების ანგარიშების გახსნა, განახლება, გაყინვა და დახურვა.
-- **ტრანზაქციების დამუშავება:** დეპოზიტები, თანხის განაღდება, გადარიცხვები რეალურ დროში და პაკეტური (batch) ოპერაციები.
-- **ორმაგი ჩაწერის სისტემა (Double-entry Ledger):** უცვლელი ტრანზაქციების ისტორია ბალანსის ზუსტი კონტროლისთვის.
-- **წვდომის როლური მოდელი (RBAC):** გამიჯნული უფლებები მომხმარებლებისთვის, ოპერატორებისთვის (Tellers) და აუდიტორებისთვის.
-- **უსაფრთხოება და აუდიტი:** ყველა ფინანსური ქმედებისა და სტატუსის ცვლილების სრული ლოგირება.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## ტექნოლოგიური სტეკი და მოთხოვნები
+## Expanding the Oxlint configuration
 
-- **პროგრამირების ენა / Runtime:** [მიუთითეთ გარემო: Node.js 20+ / Java 21 / Python 3.12 / Go 1.22]
-- **მონაცემთა ბაზა:** PostgreSQL / Redis
-- **კონტეინერიზაცია:** Docker & Docker Compose
-- **ვერსიების კონტროლი:** Git
-
----
-
-## ინსტალაცია და გაშვება
-
-### 1. რეპოზიტორიის კლონირება
-
-```bash
-git clone https://github.com/your-organization/poor-bank.git
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.

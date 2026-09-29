@@ -1,5 +1,497 @@
-.home{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+@font-face {
+    font-family: "inter-Regular";
+    src: url(../../../src/assets/Dashboard/fonts/Inter_18pt-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(../../../src/assets/Dashboard/fonts/Inter_18pt-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../../../src/assets/Dashboard/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../../../src/assets/Dashboard/fonts/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lato-Thin";
+    src: url(../../../src/assets/Dashboard/fonts/Lato-Thin.ttf) format('truetype');
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard {
+    background-color: #F5F7FA;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mycards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.cardscolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.texts h1 {
+    font-family: "Inter-Bold";
+    font-weight: 600;
+    font-size: 22px;
+    font-weight: 600;
+    color: #343C6A;
+}
+
+.texts span {
+    font-family: "Inter-Regular";
+    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
+    color: #232323;
+    cursor: pointer;
+}
+
+.onlycards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue, .white {
+    position: relative;
+    width: 350px;
+    height: 215px;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.blue {
+    background: #0A06F4;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(24, 51, 239, 0.3);
+
+
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+}
+
+.first img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: auto;
+}
+
+.first span {
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.first h2 {
+    font-family: "Lato-Bold";
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 0 0 0;
+}
+
+.second {
+    display: flex;
+    gap: 40px;
+}
+
+.second span {
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.second p {
+    font-family: "Lato-Bold";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third span {
+    font-family: "Lato-Bold";
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.third img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: auto;
+}
+
+.white {
+    background: #ffffff;
+    color: #343c6a;
+    border: 1px solid #e6edff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.white .first span {
+    font-size: 11px;
+    color: #718EBF;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.white .second span {
+    font-size: 10px;
+    color: #718EBF;
+    letter-spacing: 0.5px;
+}
+
+.white .second p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 4px 0 0 0;
+    color: #343c6a;
+}
+
+
+
+.transactions h3 {
+    font-family: "Inter-Bold";
+    font-size: 22px;
+    font-weight: 600;
+    color: #343c6a;
+    margin: 0 0 28px 0;
+}
+
+.transactions nav ul {
+    padding: 25px;
+    border-radius: 25px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    background: #ffffff;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.transactions li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.transactions li img {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.spans {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.spans span:first-child {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    font-weight: 500;
+    color: #232323;
+}
+
+.spans span:last-child {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    color: #718ebf;
+}
+
+.cost {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    font-weight: 500;
+    color: #fe5c73;
+    margin-left: auto;
+}
+
+.income {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #16dbaa;
+    margin-left: auto;
+}
+
+
+.charts {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+
+}
+
+.weeklyActivity {
+    flex: 1.5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.weeklyActivity h2 {
+    font-family: "Inter-Bold";
+    font-size: 22px;
+    font-weight: 600;
+    color: #343c6a;
+
+}
+
+.expenseStatistics {
+    width: 100%;
+    max-width: 350px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+
+.expenseStatistics h2 {
+    font-family: "Inter-Bold";
+    font-size: 22px;
+    font-weight: 600;
+    color: #343c6a;
+    margin: 0 0 16px 0;
+}
+
+
+.rightSide {
+    background: #ffffff;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 24px;
+}
+
+.leftSide {
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 24px;
+    position: relative;
+}
+.dots{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    color: #718EBF;
+    position:absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.depositDot {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1814F3;
+    display: inline-block;
+}
+
+.withdrawDot {
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #16DBCC;
+    display: inline-block;
+
+}
+
+.transferBalance {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.transferBalance h2 {
+    font-family: "Inter-Bold";
+    font-size: 22px;
+    font-weight: 600;
+    color: #343c6a;
+    margin: 0 0 16px 0;
+}
+
+.whole {
+    width:100%;
+    max-width:445px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.person .liviaSpan {
+    font-family: "Inter-Bold";
+    font-size: 16px;
+    font-weight: 400;
+    color: #232323
+}
+
+.person .ceo {
+    font-family: "Inter-Bold";
+    font-size: 15px;
+    font-weight: 400;
+    color: #718EBF
+}
+
+.people img {
+    width: 70px;
+    height: 70px;
+}
+
+.people span {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    color: #232323
+}
+
+.people p {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    color: #718EBF
+}
+
+.writeAmount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.writeAmount span {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    color: #718EBF
+}
+
+.writeAmount .btn {
+    background-color: #EDF1F7;
+    border-radius: 50px;
+    max-width: 265px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn span {
+    margin-left: 20px;
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn button {
+    background-color: #1814F3;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    max-width: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn .send {
+    color: #ffffff;
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.balanceHistory{
+    flex:1
+}
+.balanceHistory h2 {
+    font-family: "Inter-Bold";
+    font-size: 22px;
+    font-weight: 600;
+    color: #343c6a;
+    margin: 0 0 16px 0;
+}
+
+.lineChart {
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius:15px;
+   
 }
