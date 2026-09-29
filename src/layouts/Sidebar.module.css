@@ -1,0 +1,48 @@
+.navigation {
+  width: 250px;
+  min-height: 100vh;
+  padding: 32px 0;
+  background: #fff;
+  border-right: 1px solid #e6e8ef;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 24px 44px;
+  color: #343c6a;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.navigation nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navigation nav a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 24px;
+  color: #b1b1b1;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.navigation nav a svg {
+  flex-shrink: 0;
+}
+
+.navigation nav a:hover {
+  color: #2d60ff;
+  background: #f5f7ff;
+}
+
+.navigation nav a[aria-current="page"] {
+  color: #2d60ff;
+  border-left: 5px solid #2d60ff;
+  padding-left: 19px;
+} 
