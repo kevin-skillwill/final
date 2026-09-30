@@ -1,0 +1,161 @@
+.card {
+ background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px;
+    height: 120px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.cardIcon{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 54px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+.cardIcon img{
+     width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.rowIcon {
+    width: 48px;       
+    height: 48px;       
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.rowIcon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.cardTitle {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #232323;
+    margin: 0;
+}
+.cardTitle p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 62px;
+    gap: 8px;
+    margin-top: 34px;
+}
+
+.cardSubtitle {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #718EBF;
+    margin: 4px 0 0 0;
+}
+.cardSubtitle p{
+    font-weight: 400;
+    font-size: 16px;
+    gap: 8px;
+    margin-bottom: 35px;
+    margin-top: 60px;
+}
+.rowTitle {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #232323;
+    margin: 0;
+}
+
+.rowSubtitle {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #718EBF;
+    margin: 4px 0 0 0;
+}
+.cardRow {
+     display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+.listHeading {
+   color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.listRow {
+    background-color: #FFFFFF;
+    border: 1px solid #718EBF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 24px;
+    margin-top: 20px; 
+    
+}
+
+.rowInfo {
+    flex: 1;
+}
+
+.viewDetails {
+    background: transparent;
+    border: 1px solid #718EBF;
+    color: #718EBF;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home {
+    padding: 24px;
+    background-color: #F5F7FA;
+    font-family: sans-serif;
+    min-height: 100vh;
+    
+}
+
+
+.listRow:hover .viewDetails {
+    border: 1px solid #1814F3;
+    color: #1814F3;
+}
+.iconBlue {
+    background-color: #E7EDFF;
+}
+
+.iconYellow {
+    background-color: #FFF5D9;
+}
+
+.iconTeal {
+    background-color: #DCFAF8;
+}
+
+.iconPink {
+    background-color: #FFE0EB;
+}
