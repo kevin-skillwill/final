@@ -43,6 +43,7 @@ export const CreditCards = () => {
                 className={`${styles.navItem} ${isActive ? styles.active : ''}`}
               >
                 
+                
                 {isActive && <div className={styles.activeBar} />}
 
                 <span className={styles.navIcon}>
